@@ -1,13 +1,17 @@
-import Image from "next/image";
-import Avatar from "@/components/Avatar";
+import Header from "@/components/Header";
+import MemberList from "@/components/MemberList";
+import SignupForm from "@/components/SignupForm";
 
 export default function Home() {
   return (
-    <div className="container mx-auto p-4">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Avatar imgUrl="profile-1" name="John Doe" />
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
+    <div>
+      <div className="min-h-screen">
+        <div className="mx-auto max-w-lg px-4 py-6">
+          <Header />
+          <SignupForm />
+          <MemberList />
+        </div>
+      </div>
     </div>
   );
 }
